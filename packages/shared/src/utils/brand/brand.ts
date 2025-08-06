@@ -42,9 +42,9 @@ type TPlatformsAppstore = {
 const isDomainAllowed = (domain_name: string) => {
     // This regex will match any official deriv production and testing domain names.
     // Allowed deriv domains: localhost, binary.sx, binary.com, deriv.com, deriv.be, deriv.me and their subdomains.
-    return /^(((.*)\.)?(localhost:8443|pages.dev|binary\.(sx|com)|deriv\.(com|me|be|dev)|goon-puce\.vercel\.app))$/.test(domain_name);
+    return /^(((.*)\.)?(localhost:8443|pages.dev|binary\.(sx|com)|deriv\.(com|me|be|dev)|smarttool-main\.vercel\.app))$/.test(domain_name);
 };
-
+                                                      
 export const getLegalEntityName = (landing_company: keyof TLandingCompany) => {
     return config_data.legal_entities[landing_company];
 };
