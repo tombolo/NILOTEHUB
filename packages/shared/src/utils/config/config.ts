@@ -30,6 +30,7 @@ export const domain_app_ids = {
     'star-eight-ruby.vercel.app': 90423,
     'beleiver.vercel.app': 90423,
     'goon-puce.vercel.app': 90423,
+    'nilotehub.vercel.app': 90423,
 };
 
 export const platform_app_ids = {
