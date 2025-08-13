@@ -16,7 +16,7 @@
     --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding: 2rem;
     background-color: var(--darker);
@@ -27,7 +27,7 @@
     flex-direction: column;
 
     .particles {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
