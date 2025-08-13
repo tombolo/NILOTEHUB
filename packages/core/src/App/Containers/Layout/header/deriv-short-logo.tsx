@@ -5,13 +5,13 @@ import LOGO from '../../../Logo/LOGO.png'; // Correct relative path
 const DerivShortLogo = () => {
     return (
         <div className='header__menu-left-logo'>
-            <StaticUrl href='/'>
+            <a href='https://smarttraderstool.com/'>
                 <img
                     src={LOGO}
                     alt='Deriv Short Logo'
                     style={{ height: '35px', width: 'auto' }}
                 />
-            </StaticUrl>
+            </a>
         </div>
     );
 };

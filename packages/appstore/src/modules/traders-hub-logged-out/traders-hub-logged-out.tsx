@@ -40,7 +40,9 @@ const TradersHubLoggedOut = observer(() => {
                 >
                     <GetStartedTradingBanner />
                     <Text size={isDesktop ? 'm' : 'xsm'} weight='bold' color='prominent'>
-                        <Localize i18n_default_text="Nilote Hub" />
+                        <a href='https://nilotetraders.com/'>
+                            <Localize i18n_default_text="Nilote Hub" />
+                        </a>
                     </Text>
                     {isDesktop ? (
                         <OrderedPlatformSections isDesktop />

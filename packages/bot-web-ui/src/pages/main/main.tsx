@@ -23,7 +23,8 @@ import Finesttool from '../finesttool';
 import RiskManagementCalculator from '../riskManagementCalculator';
 import Strategy from '../strategy';
 import Copytrading from '../copytrading';
-import { FaChartBar, FaChartLine, FaPuzzlePiece, FaChessKnight, FaUsers, FaShieldAlt, FaRobot, FaTachometerAlt, FaExchangeAlt } from 'react-icons/fa';
+import Botlist from '../botlist';
+import { FaChartBar, FaChartLine, FaPuzzlePiece, FaChessKnight, FaUsers, FaShieldAlt, FaRobot, FaTachometerAlt, FaExchangeAlt, FaCopy, FaLightbulb } from 'react-icons/fa';
 
 
 const AppWrapper = observer(() => {
@@ -54,7 +55,7 @@ const AppWrapper = observer(() => {
     const { url_hashed_values, is_desktop } = ui;
 
 
-    const hash = ['dashboard', 'bot_builder', 'chart', 'tutorial', 'finesttool', 'trader', 'risk_management_calculator'];
+    const hash = ['dashboard', 'bot_builder', 'chart', 'tutorial', 'botlist', 'finesttool', 'copytrading', 'risk_management_calculator', 'strategy'];
 
     let tab_value: number | string = active_tab;
     const GetHashedValue = (tab: number) => {
@@ -217,6 +218,18 @@ const AppWrapper = observer(() => {
                             </div>
                         </div>
 
+                        <div
+                            label={
+                                <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
+                                    <FaExchangeAlt size={14} />
+                                    Free Bots
+                                </span>
+                            }
+                            id='id-botlist'
+                        >
+                            <Botlist />
+                        </div>
+
 
                         <div
                             label={
@@ -233,7 +246,7 @@ const AppWrapper = observer(() => {
                         <div
                             label={
                                 <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
-                                    <FaChartBar size={14} />
+                                    <FaCopy size={14} />
                                     Copy Trading
                                 </span>
                             }
@@ -261,7 +274,7 @@ const AppWrapper = observer(() => {
                         <div
                             label={
                                 <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
-                                    <FaChessKnight size={14} />
+                                    <FaLightbulb size={14} />
                                     Strategy
                                 </span>
                             }

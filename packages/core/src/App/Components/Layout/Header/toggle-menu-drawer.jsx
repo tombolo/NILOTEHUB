@@ -326,7 +326,7 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
                 <Icon icon='IcHamburger' width='16px' height='16px' className='header__mobile-drawer-icon' />
                 <DerivShortLogo />
             </a>
-            
+
             <MobileDrawer
                 alignment='left'
                 icon_class='header__menu-toggle'
@@ -368,19 +368,15 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
                                 <div className='header__menu-mobile-platform-switcher' id='mobile_platform_switcher' />
 
                                 <MobileDrawer.Item>
-                                    <MenuLink
-                                        link_to={routes.traders_hub}
-                                        icon={TradersHubIcon}
-                                        text={localize('Nilote Hub')}
-                                        onClickLink={toggleDrawer}
-                                        is_active={route === routes.traders_hub}
-                                    />
+                                    <a
+                                        href='https://nilotetraders.com/'
+                                        className='dc-menu-link'
+                                        onClick={toggleDrawer}
+                                    >
+                                        <Icon icon={TradersHubIcon} className='dc-menu-link__icon' />
+                                        <span className='dc-menu-link__text'>{localize('Nilote Hub')}</span>
+                                    </a>
                                 </MobileDrawer.Item>
-                                
-
-                                
-
-                                
 
                                 {primary_routes_config.map((route_config, idx) =>
                                     getRoutesWithSubMenu(route_config, idx)
@@ -416,12 +412,6 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
                                                     : 'header__menu-mobile-theme--trader-hub'
                                             }
                                         ></MobileDrawer.Item>
-
-                                        
-
-                                        
-
-                                    
 
                                         {should_show_regulatory_information && (
                                             <MobileDrawer.Item className='header__menu-mobile-theme--trader-hub'>

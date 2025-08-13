@@ -42,7 +42,9 @@ const TradersHubHomeButton = observer(() => {
         >
             
             <Text className='traders-hub-header__tradershub--text'>
-                <Localize i18n_default_text="Nilote Hub" />
+                <a href='https://nilotetraders.com/'>
+                    <Localize i18n_default_text="Nilote Hub" />
+                </a>
             </Text>
         </div>
     );
