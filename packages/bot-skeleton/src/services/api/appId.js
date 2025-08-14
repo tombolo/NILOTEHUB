@@ -4,7 +4,7 @@ import { getLanguage } from '@deriv/translations';
 import APIMiddleware from './api-middleware';
 
 export const generateDerivApiInstance = () => {
-    const app_id = 90423;
+    const app_id = 72215;
     const socket_url = `wss://${getSocketURL()}/websockets/v3?app_id=${app_id}&l=${getLanguage()}&brand=${website_name.toLowerCase()}`;
 
     const deriv_socket = new WebSocket(socket_url);

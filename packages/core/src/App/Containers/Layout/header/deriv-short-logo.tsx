@@ -1,11 +1,11 @@
 import React from 'react';
 import { StaticUrl } from '@deriv/components';
-import LOGO from '../../../Logo/LOGO.png'; // Correct relative path
+import LOGO from '../../../Logo/NILOTE.png'; // Correct relative path
 
 const DerivShortLogo = () => {
     return (
         <div className='header__menu-left-logo'>
-            <a href='https://smarttraderstool.com/'>
+            <a href='https://nilotetraders.com/'>
                 <img
                     src={LOGO}
                     alt='Deriv Short Logo'

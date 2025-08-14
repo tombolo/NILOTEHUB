@@ -16,25 +16,25 @@ export const livechat_license_id = 12049137;
 export const livechat_client_id = '66aa088aad5a414484c1fd1fa8a5ace7';
 
 export const domain_app_ids = {
-    'gletraders.com': 90423,
-    'deriv.app': 90423,
-    'app.deriv.com': 90423,
-    'staging-app.deriv.com': 90423,
-    'app.deriv.me': 90423,
-    'staging-app.deriv.me': 90423,
-    'app.deriv.be': 90423,
-    'staging-app.deriv.be': 90423,
-    'binary.com': 90423,
-    'test-app.deriv.com': 90423,
-    'royal-app-seven.vercel.app': 90423,
-    'star-eight-ruby.vercel.app': 90423,
-    'beleiver.vercel.app': 90423,
-    'goon-puce.vercel.app': 90423,
-    'nilotehub.vercel.app': 90423,
+    'gletraders.com': 72215,
+    'deriv.app': 72215,
+    'app.deriv.com': 72215,
+    'staging-app.deriv.com': 72215,
+    'app.deriv.me': 72215,
+    'staging-app.deriv.me': 72215,
+    'app.deriv.be': 72215,
+    'staging-app.deriv.be': 72215,
+    'binary.com': 72215,
+    'test-app.deriv.com': 72215,
+    'royal-app-seven.vercel.app': 72215,
+    'star-eight-ruby.vercel.app': 72215,
+    'beleiver.vercel.app': 72215,
+    'goon-puce.vercel.app': 72215,
+    'nilotehub.vercel.app': 72215,
 };
 
 export const platform_app_ids = {
-    derivgo: 90423,
+    derivgo: 72215,
 };
 
 export const getCurrentProductionDomain = () =>
@@ -54,7 +54,7 @@ export const isLocal = () => /localhost(:\d+)?$/i.test(window.location.hostname)
  */
 export const getAppId = () => {
     let app_id = null;
-    const user_app_id = '90423';
+    const user_app_id = '72215';
     const config_app_id = window.localStorage.getItem('config.app_id');
     const current_domain = getCurrentProductionDomain() || '';
     window.localStorage.removeItem('config.platform');
@@ -70,12 +70,12 @@ export const getAppId = () => {
         app_id = user_app_id;
     } else if (isStaging()) {
         window.localStorage.removeItem('config.default_app_id');
-        app_id = is_bot ? 90423 : domain_app_ids[current_domain as keyof typeof domain_app_ids] || 90423;
+        app_id = is_bot ? 72215 : domain_app_ids[current_domain as keyof typeof domain_app_ids] || 72215;
     } else if (/localhost/i.test(window.location.hostname)) {
-        app_id = 90423;
+        app_id = 72215;
     } else {
         window.localStorage.removeItem('config.default_app_id');
-        app_id = is_bot ? 90423 : domain_app_ids[current_domain as keyof typeof domain_app_ids] || 90423;
+        app_id = is_bot ? 72215 : domain_app_ids[current_domain as keyof typeof domain_app_ids] || 72215;
     }
 
     return app_id;

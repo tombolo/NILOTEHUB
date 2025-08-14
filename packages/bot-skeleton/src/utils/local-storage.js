@@ -2,22 +2,38 @@ import LZString from 'lz-string';
 import localForage from 'localforage';
 import DBotStore from '../scratch/dbot-store';
 import { save_types } from '../constants/save-type';
-import AutoRobot from './bots/auto_robot_by_GLE1.xml';
-import OverUnderBot from './bots/over_under_bot_by_GLE.xml';
+import MarketMaven from './bots/market_maven.xml';
+import Nilotemine from './bots/nilote_mine.xml';
+import Binarysmasher from './bots/binary_smasher.xml';
+import Dollarflipper from './bots/dollar_flipper.xml';
 
 // Static bot configurations
 const STATIC_BOTS = {
-    deriv_miner_pro: {
-        id: 'auto_robot_by_GLE1',
-        name: 'Auto robot',
-        xml: AutoRobot,
+    marketMaven: {
+        id: 'market_maven',
+        name: 'Market Maven',
+        xml: MarketMaven,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
-    dollar_flipper: {
-        id: 'over_under_bot_by_GLE',
-        name: 'Over&under bot',
-        xml: OverUnderBot,
+    Nilotemine: {
+        id: 'Nilotemine',
+        name: 'Nilote Mine',
+        xml: Nilotemine,
+        timestamp: Date.now(),
+        save_type: save_types.LOCAL,
+    },
+    Binarysmasher: {
+        id: 'binary_smasher',
+        name: 'Binary Smasher',
+        xml: Binarysmasher,
+        timestamp: Date.now(),
+        save_type: save_types.LOCAL,
+    },
+    deriv_flipper: {
+        id: 'dollar_flipper',
+        name: ' Dollar Flipper',
+        xml: Dollarflipper,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },

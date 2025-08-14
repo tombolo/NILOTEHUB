@@ -16,7 +16,7 @@
     --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 
     position: relative;
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     padding: 2rem;
     background-color: var(--darker);
@@ -138,7 +138,7 @@
         -webkit-text-fill-color: transparent;
         padding-right: 1rem;
 
-        &::before {
+        &:before {
             content: '';
             position: absolute;
             bottom: -5px;
@@ -159,7 +159,7 @@
             transform: translateY(-3px);
             text-shadow: 0 6px 25px rgba(110, 68, 255, 0.7);
 
-            &::before {
+            &:before {
                 opacity: 1;
                 filter: blur(8px);
             }
@@ -194,7 +194,7 @@
         position: relative;
         padding-left: 1rem;
 
-        &::before {
+        &:before {
             content: '';
             position: absolute;
             left: 0;
@@ -322,7 +322,7 @@
         position: relative;
         overflow: hidden;
 
-        &::before {
+        &:before {
             content: '';
             position: absolute;
             top: 0;
