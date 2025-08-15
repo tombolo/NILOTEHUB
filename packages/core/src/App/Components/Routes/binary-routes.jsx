@@ -36,8 +36,8 @@ const BinaryRoutes = observer(props => {
         <React.Suspense fallback={getLoader()}>
             <Prompt when={prompt_when} message={promptFn} />
             <Switch>
-                {/* Redirect from / to /bot */}
-                <Route exact path='/' render={() => <Redirect to='/bot' />} />
+                {/* Redirect from / to /?page=bot */}
+                <Route exact path='/' render={() => <Redirect to='/?page=bot' />} />
                 {getRoutesConfig().map((route, idx) => (
                     <RouteWithSubRoutes key={idx} {...route} {...props} />
                 ))}
