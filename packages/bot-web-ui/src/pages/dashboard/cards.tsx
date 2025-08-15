@@ -143,7 +143,7 @@ const Cards = observer(({ is_mobile, has_dashboard_strategies }: TCardProps) => 
                         );
                     })}
                 </div>
-                <DashboardBotList />
+               
             </div>
         ),
         // eslint-disable-next-line react-hooks/exhaustive-deps
